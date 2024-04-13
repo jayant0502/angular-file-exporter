@@ -1,0 +1,21 @@
+<div class="button-container">
+  <button class="download-button" (click)="downloadFilteredData()">Download Data as Excel</button>
+  <button class="download-pdf-button" (click)="downloadFilteredDataAsPDF()">Download Data as PDF</button>
+</div>
+
+<table #dataTable class="data-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of tableData">
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.age }}</td>
+    </tr>
+  </tbody>
+</table>

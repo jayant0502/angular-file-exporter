@@ -1,0 +1,46 @@
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px; // Adjust as needed
+    padding: 1rem;
+    background-color: #4CAF50;
+  }
+  
+  .download-button, .download-pdf-button {
+    padding: 8px 16px;
+    background-color: #ffffff; // Green color, change as desired
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #69eb70; // Darker shade of green on hover, change as desired
+    }
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd; // Light gray border
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4CAF50; // Green color for table header, change as desired
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; // Alternate row background color, change as desired
+  }
+  
+  tr:hover {
+    background-color: #ddd; // Light gray background color on hover, change as desired
+  }
+  
